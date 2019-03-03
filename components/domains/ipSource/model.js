@@ -3,7 +3,7 @@ const Schema = Mongoose.Schema;
 
 
 let IpSourcesSchema = new Schema({
-    Name:String,
+    Name:{type:String, index: true},
     Ips:[],
 });
 
