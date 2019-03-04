@@ -2,8 +2,8 @@ const Express = require('express');
 const DomainsRouter = Express.Router();
 const Domains = require('./domain/dbQuery');
 const ReportItems = require('./reportItem/dbQuery');
-const {HttpStatuscodes}= require('../../settings/constant');
-const Validate = require('../../core/validator');
+const {HttpStatuscodes}= require('../settings/constant');
+const Validate = require('../core/validator');
 
 //Add Domain
 DomainsRouter.post('/', (req, res) => {

@@ -1,4 +1,4 @@
-const BaseQuery = require('../../../core/baseDbQuery');
+const BaseQuery = require('../../core/baseDAO');
 const ipSourceSchema = require('./model.js');
 
 class DomainsQuery extends BaseQuery {

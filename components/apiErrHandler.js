@@ -1,4 +1,4 @@
-const {HttpStatuscodes}= require('../../settings/constant');
+const {HttpStatuscodes}= require('../settings/constant');
 module.exports = function (err, req, res, next) {
     switch (err.case) {
         case 'req':

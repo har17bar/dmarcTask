@@ -2,9 +2,9 @@ const Express = require('express');
 const ipSourceRouter = Express.Router();
 //const Domains = require('./domain/dbQuery');
 const IpSource = require('./ipSource/dbQuery');
-const Validate = require('../../core/validator');
+const Validate = require('../core/validator');
 const _ = require("underscore");
-const Error = require('../../core/error')
+const Error = require('../core/error')
 
 
 ipSourceRouter.post('/',(req,res,next)=>{

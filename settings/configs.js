@@ -1,5 +1,7 @@
+const EnvPath = process.env.NODE_ENV ? ['.env', process.env.NODE_ENV].join('.') : '.env.dev';
+console.log(`settings/${EnvPath}`);
+require('dotenv').config({path: `settings/${EnvPath}`});
 module.exports = {
-    DB_URL: 'mongodb://localhost:27017/eazydmarc',
-    API_BASE_URL: '/api/v1/',
-    PORT: 3000
+    DB_URL: process.env.DB_URL,
+    PORT: process.env.PORT
 }
