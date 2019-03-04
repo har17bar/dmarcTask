@@ -14,7 +14,7 @@ ipSourceRouter.post('/',(req,res,next)=>{
     if (!Validate.checkIsIP(Ips,true))  throw next({case:"param",msg:'Not ip addres'});
     IpSource.findOne({Name}, (err,ipSource)=> {
         if (err) return  next(new Error('server',err));
-        if (ipSource) return next(new Error('exist','IpSourse already exist')); // harcnel VardanSefin throw next(new Error('exist','IpSourse already exist'))
+        if (ipSource) return next(new Error('exist','IpSourse already exist')); // harcnel ? throw next(new Error('exist','IpSourse already exist'))
         var ipSourceForCreate = new IpSource();
         ipSourceForCreate.Name = Name;
         _.each(Ips, (ip)=>{
