@@ -13,7 +13,6 @@ app.use(BodyParser.json());
 app.use('/api/domains', DomainsRouter);
 app.use('/api/ipSource', IpSourceRouter);
 app.use(ErrHandler);
-
 process
     .on('unhandledRejection', (reason, p) => {
         console.error(reason, 'Unhandled Rejection at Promise', p);
